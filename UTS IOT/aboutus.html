@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" />
+
+<html lang="en">
+    <div id="bungkus">
+        <div id = "hasil-masukinNama"></div> <!--nanti nampilin namanya di sini, aku nambahin script JS di bawah ya-->
+        <div id="top">
+            <div id="logo">
+                <a href="#">
+                    <img src="gambar/uang.png"/>
+                </a>
+            </div> 
+        <div id="menu">
+            <ul id="nav">
+                    <li><a href="main.html">Main</a></li>
+                     <li><a href="moneytracker.html">Income & Outcome</a></li>
+                    <li><a class="active" href="aboutus.html">About Us</a></li> 
+            </ul>
+        </div>
+    </div>
+    <div class="container-1">
+        <div class="flexbox1">
+            <img id="pic" src="gambar/jastin.jpg" alt="jastin">
+            <h2 class="head1">Jastin Afrian</h2>
+            <p class="a">00000099187</p>
+            <br>
+        </div>
+        <br>
+        <div class="flexbox1">
+            <img id="pic" src="gambar/howard.jpg" alt="howard">
+            <h2 class="head1">Howard</h2>
+            <p class="a">00000099772</p>
+            <br>
+        </div>
+            <br>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="container-1">
+        <div class="flexbox1">
+            <img id="pic" src="gambar/alen.jpg" alt="alen">
+            <h2 class="head1">Valen Angellina Jocelyn</h2>
+            <p class="a">00000097506</p>
+            <br>
+        </div>
+            <div class="flexbox1">
+                <img id="pic" src="gambar/denzel.jpg" alt="denzel">
+                <h2 class="head1">Benediktus Denzel Galgani Lumeno</h2>
+                <p class="a">00000106218</p>
+        </div>
+        <br>
+        <script type = "text/javascript"> //ini scriptnya
+            var ouput = localStorage.getItem('userName');
+            var salam = "Hello, " + ouput;
+            document.getElementById('hasil-masukinNama').innerHTML = '<strong>' + salam  +'</strong>';
+        </script>
